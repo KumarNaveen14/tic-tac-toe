@@ -1,0 +1,93 @@
+:root{
+    --body-color:#555879;
+    --box-color:#98A1BC;
+    --cont-color:#DED3C4;
+    --btn-color:#7C4585;
+
+
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    justify-content: center;
+    background-color: var(--body-color);
+}
+
+h2{
+    text-align: center;
+    margin: 2rem;
+    text-decoration: solid;
+    color: var(--cont-color);
+}
+
+main{
+    justify-self: center;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    background-color: var(--cont-color);
+    gap: 5px;
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+.boxes{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--box-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.result{
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: 40px solid;
+    color: var(--cont-color);
+    font-size: large;
+}
+
+.reset,.new{
+    background-color: var(--btn-color);
+    color: rgb(11, 1, 1);
+    border-radius: 15px;
+    height: 2rem;
+    width: 7rem;
+    cursor: pointer;
+    
+}
+
+.boxes:hover {
+  background-color: #254D70; /* You can use any color you like */
+  transform: scale(1.05);       /* Slightly zoom in */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.new:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    margin-left: 10px;
+}
+
+.reset:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    margin-right: 10px;
+}
+
+footer{
+    margin: 2rem;
+    text-align: center;
+
+}
